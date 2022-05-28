@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CCE5FF"
+            android:text=" 이전 " />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#99CCFF"
+            android:text=" 다음 " />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/artmain"/>
+
+            <ImageView
+                android:padding="20dp"
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artitst1" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/artistText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artist"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address1"
+                android:background="#003366"
+                android:textColor="#FFFFFF"
+                android:text="@string/address1"/>
+
+        </LinearLayout> <!--   1페이지 무하 프로필 끝     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#FFB829"
+                android:text="@string/youngmain"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="@string/young1"/>
+        </LinearLayout><!-- 2 끝         -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/img2"
+                android:src="@drawable/art1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/art1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#669999"
+                android:layout_gravity="center"
+                android:text="@string/img2hint"/>
+        </LinearLayout><!-- 3 끝         -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#0033CC"
+                android:text="@string/pagefourmain"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="@string/pagefour"/>
+        </LinearLayout><!-- 4 끝         -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textSize="20sp"
+                android:text="@string/friend"
+                android:textColor="#336699" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/imgsa"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/sarah"
+                android:textColor="#000000" />
+
+        </LinearLayout><!-- 5 배우소개 끝         -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/art2"
+                android:id="@+id/img3"/>
+
+            <TextView
+                android:id="@+id/artText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/art2"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#669999"
+                android:layout_gravity="center"
+                android:text="@string/img3hint"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/last3"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherArt"
+                android:background="#FFCCE5"
+                android:layout_margin="10dp"
+                android:text="다른 전시 보러가기"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home"
+                android:layout_margin="10dp"
+                android:background="#FF99CC"
+                android:text="홈으로 이동"/>
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

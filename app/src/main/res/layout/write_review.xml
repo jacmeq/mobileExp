@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edit"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="후기를 자유롭게 작성해주세요."
+        android:gravity="center"
+        android:id="@+id/editW"
+        android:layout_weight="7"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInsert"
+        android:background="#FFFFCC"
+        android:layout_margin="2dp"
+        android:textSize="15sp"
+        android:text="후기입력"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReview"
+        android:background="#FFFFCC"
+        android:layout_margin="2dp"
+        android:textSize="15sp"
+        android:text="후기보기"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="후기보기를 눌러보세요."
+        android:gravity="center"
+        android:id="@+id/editR"
+        android:layout_weight="7"/>
+
+</LinearLayout>

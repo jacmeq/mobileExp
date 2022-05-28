@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "729354388162",
+    "project_id": "mobileexp-5849d",
+    "storage_bucket": "mobileexp-5849d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729354388162:android:d206a510d9026b3974715b",
+        "android_client_info": {
+          "package_name": "com.culture.mobileexp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729354388162-47r5kn4d8p9rhr66l1j98cpqkdkc3hk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlMc7dGXYRCVj8b5jN_oWAUT3WtMBn8-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729354388162-47r5kn4d8p9rhr66l1j98cpqkdkc3hk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

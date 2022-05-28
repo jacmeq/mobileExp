@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CCE5FF"
+            android:text=" 이전 " />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#99CCFF"
+            android:text=" 다음 " />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="영국이 가장 사랑하는 화가, 인상파의 선구자인 윌리엄 터너"/>
+
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artist2" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/artistText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/artist2"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address1"
+                android:background="#003366"
+                android:textColor="#FFFFFF"
+                android:text="윌리엄 터너 출생지 지도 보기"/>
+
+        </LinearLayout> <!--   1페이지 프로필 끝     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:textColor="#FF66B2"
+                android:text="@string/young2main"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:text="@string/young2"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:src="@drawable/t_young"/>
+        </LinearLayout><!-- 2 끝         -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/img2"
+                android:src="@drawable/t_art1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="대주교 궁전의 전경"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#669999"
+                android:layout_gravity="center"
+                android:text="@string/img2hint"/>
+        </LinearLayout><!-- 3 끝         -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#0033CC"
+                android:text="@string/t_pagefourmain"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/t_pagefour"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/img3"
+                android:src="@drawable/t_firstart"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#669999"
+                android:layout_gravity="center"
+                android:text="@string/img2hint"/>
+
+        </LinearLayout><!-- 4 끝         -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/t_night"
+            android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:padding="30dp"
+            android:textColor="#FFFFFF"
+            android:text="'성공의 가도를 달리던 그의 그림의 변화'"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:text="@string/t_story"/>
+        </LinearLayout><!-- 5끝       -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/img4"
+                android:src="@drawable/t_art2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="눈보라 , 122 X 91.5 cm, 캔버스에 유채 Oil on canvas, 1842, 조지프 말로드 윌리엄 터너"
+                android:textColor="#000000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#669999"
+                android:layout_gravity="center"
+                android:padding="30dp"
+                android:text="@string/img2hint"/>
+        </LinearLayout><!-- 6 끝         -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/img5"
+                android:src="@drawable/t_art3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#669999"
+                android:layout_gravity="center"
+                android:text="@string/img2hint"/>
+
+            <SlidingDrawer
+                android:id="@+id/slidingDrawer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:content="@+id/content"
+                android:handle="@+id/handle" >
+
+                <Button
+                    android:id="@+id/handle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#336600"
+                    android:textColor="#FFFFFF"
+                    android:text="↑\n초기 작품과 비교해보기" />
+
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/t_firstart"/>
+                </LinearLayout>
+            </SlidingDrawer>
+        </LinearLayout><!-- 7 끝         -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="#663366"
+                android:text="영국 20파운드 지폐"/>
+            <ImageView
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/t_money" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/t_last"/>
+        </LinearLayout><!-- 8 끝         -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/t_bye"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/otherArt"
+                android:background="#FFE5CC"
+                android:layout_margin="10dp"
+                android:text="다른 전시 보러가기"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home"
+                android:layout_margin="10dp"
+                android:background="#FFCC99"
+                android:text="홈으로 이동"/>
+        </LinearLayout>
+    </ViewFlipper>
+</LinearLayout>

@@ -59,15 +59,5 @@
         android:layout_marginTop="15dp"
         android:text="회원가입"/>
 
-    <Button
-        android:id="@+id/btn_reserve"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_round"
-        android:layout_marginRight="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:text="예약하기" />
-
 
 </LinearLayout>

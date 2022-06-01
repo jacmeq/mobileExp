@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Main_loginActivity extends AppCompatActivity {
 
-    Button btn_login,btn_register, btn_reserve;
+    Button btn_login,btn_register;
     private FirebaseAuth mFirebaseAuth; //firebase연동
     private DatabaseReference mDatabaseReference;//서버에 연결시킬 수 있는 실시간 데이터베이스
     private EditText mEtEmail, mEtPwd;
@@ -37,7 +37,6 @@ public class Main_loginActivity extends AppCompatActivity {
         mEtPwd = findViewById(R.id.et_pw);
         btn_login = findViewById(R.id.btn_login);
         btn_register = findViewById(R.id.btn_register);
-        btn_reserve =findViewById(R.id.btn_reserve);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +50,7 @@ public class Main_loginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if(task.isSuccessful()){
-                            Intent intent = new Intent(Main_loginActivity.this,Select_artActivity.class);
+                            Intent intent = new Intent(Main_loginActivity.this,BookingActivity.class);
                             startActivity(intent);
                             finish(); //현재 액티비티 파괴
                         }
@@ -69,14 +68,6 @@ public class Main_loginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //회원가입 화면으로 이동
                 Intent intent = new Intent(Main_loginActivity.this, Main_registerActivity.class);
-                startActivity(intent);
-            }
-        });
-        btn_reserve.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //회원가입 화면으로 이동
-                Intent intent = new Intent(Main_loginActivity.this, BookingActivity.class);
                 startActivity(intent);
             }
         });

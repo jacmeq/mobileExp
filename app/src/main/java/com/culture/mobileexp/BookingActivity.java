@@ -1,36 +1,31 @@
 package com.culture.mobileexp;
 
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.DialogInterface;
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.TextView;
-import android.widget.Toast;
-
+import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class BookingActivity extends AppCompatActivity {
 
-    Button btn_pm12, btn_pm2, btn_pm4, btn_End, btn_up, btn_down, btn_logout;
+    public static Context Context; //예약확인 정보 불러오기
+
+    Button btn_pm12, btn_pm2, btn_pm4, btn_End, btn_up, btn_down;
     CalendarView calView;
-    TextView textView, tvYear, tvMon, tvDay, counter;
+    TextView tvTime, tvYear, tvMonth, tvDay, people_counter;
     int selectYear, selectMonth, selectDay;
     private int count = 0;
+
     private static final String TAG = "Main_Activity";
 
     private FirebaseAuth mAuth;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,6 +33,7 @@ public class BookingActivity extends AppCompatActivity {
         setContentView(R.layout.booking);
 
         mAuth = FirebaseAuth.getInstance();
+        Context = this;
 
         btn_pm12 = findViewById(R.id.btn_pm12);
         btn_pm2 = findViewById(R.id.btn_pm2);
@@ -45,14 +41,14 @@ public class BookingActivity extends AppCompatActivity {
         btn_End = findViewById(R.id.btn_End);
 
         calView = findViewById(R.id.calView);
-        textView = findViewById(R.id.textview);
+        tvTime = findViewById(R.id.tvTime);
 
         tvYear = findViewById(R.id.tvYear);
-        tvMon = findViewById(R.id.tvMonth);
+        tvMonth = findViewById(R.id.tvMonth);
         tvDay = findViewById(R.id.tvDay);
 
-        counter = findViewById(R.id.counter);
-        counter.setText(count + "");
+        people_counter = findViewById(R.id.people_counter);
+        people_counter.setText(count + "");
         btn_up = findViewById(R.id.btn_up);
         btn_down = findViewById(R.id.btn_down);
 
@@ -63,48 +59,38 @@ public class BookingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d(TAG, "onClick: btnAdd : " + v.getClass().getName());
                 count++;
-                counter.setText(count + "");
+                people_counter.setText(count + "");
             }
-        });
+        }); //인원수 1씩 증가
 
         btn_down.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (count > 0) {
                     count--;
-                    counter.setText(count + "");
+                    people_counter.setText(count + "");
                 }
             }
-        });
+        }); //인원수 1씩 감소
 
         btn_pm12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textView.setText("오후 12시");
+                tvTime.setText("오후 12시");
             }
         }); //12시 예약
         btn_pm2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textView.setText("오후 2시");
+                tvTime.setText("오후 2시");
             }
         }); //2시 예약
         btn_pm4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textView.setText("오후 4시");
+                tvTime.setText("오후 4시");
             }
         }); //4시 예약
-
-
-        btn_End.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                tvYear.setText(Integer.toString(selectYear));
-                tvMon.setText(Integer.toString(selectMonth));
-                tvDay.setText(Integer.toString(selectDay));
-            }
-        });
 
         calView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -113,7 +99,18 @@ public class BookingActivity extends AppCompatActivity {
                 selectMonth = i1 + 1;
                 selectDay = i2;
             }
-        });
+        }); //날짜예약
+
+        btn_End.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvYear.setText(Integer.toString(selectYear));
+                tvMonth.setText(Integer.toString(selectMonth));
+                tvDay.setText(Integer.toString(selectDay));
+                Intent intent = new Intent(BookingActivity.this, Booking_checkActivity.class);
+                startActivity(intent);
+            }
+        }); //예약확인창 이동
 
 
     }

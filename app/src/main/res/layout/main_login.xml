@@ -4,45 +4,70 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:background="@drawable/login_img"
+    android:gravity="center"
     tools:context=".Main_loginActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:text="Art Gallery"
         android:layout_gravity="center"
         android:padding="30dp"
-        android:textSize="30sp"
-        android:textColor="#000000"/>
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:background="@drawable/border"
         android:id="@+id/et_email"
-        android:hint="abcdef@gmail.com"/>
-    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_round"
+        android:inputType="textEmailAddress"
+        android:hint="abcdef@gmail.com"/>
+
+    <EditText
         android:id="@+id/et_pw"
-        android:hint="Your password"/>
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_round"
+        android:hint="Your password"
+        android:inputType="textPassword" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_login"
+        android:background="@drawable/button_round"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
         android:text="로그인"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_register"
+        android:background="@drawable/button_round"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
         android:text="회원가입"/>
 
     <Button
+        android:id="@+id/btn_reserve"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_reserve"
-        android:text="예약하기"/>
+        android:background="@drawable/button_round"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="예약하기" />
 
 
 </LinearLayout>

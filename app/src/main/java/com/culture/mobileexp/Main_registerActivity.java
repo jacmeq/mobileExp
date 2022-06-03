@@ -22,7 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class Main_registerActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth; //firebase연동
     private DatabaseReference mDatabaseReference;//서버에 연결시킬 수 있는 실시간 데이터베이스
-    private EditText mEtBirth,mEtEmail, mEtPwd;
+    private EditText mEtEmail, mEtPwd;
     private Button mBtnRegister, btn_re_login;
 
     @Override
@@ -33,7 +33,6 @@ public class Main_registerActivity extends AppCompatActivity {
         mFirebaseAuth = FirebaseAuth.getInstance();
         mDatabaseReference = FirebaseDatabase.getInstance().getReference("mobileExp");
 
-       // mEtBirth = findViewById(R.id.et_birth);
         mEtEmail = findViewById(R.id.et_email);
         mEtPwd = findViewById(R.id.et_pw);
         mBtnRegister = findViewById(R.id.btn_register);

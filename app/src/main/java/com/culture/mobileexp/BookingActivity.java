@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.content.Context;
 import androidx.annotation.NonNull;
@@ -16,10 +17,10 @@ import com.google.firebase.auth.FirebaseAuth;
 public class BookingActivity extends AppCompatActivity {
 
     public static Context Context; //예약확인 정보 불러오기
-
+    RadioButton radio_Turner,radio_Mucha;
     Button btn_pm12, btn_pm2, btn_pm4, btn_End, btn_up, btn_down;
     CalendarView calView;
-    TextView tvTime, tvYear, tvMonth, tvDay, people_counter;
+    TextView tvTime, tvYear, tvMonth, tvDay, people_counter, tvselectE;
     int selectYear, selectMonth, selectDay;
     private int count = 0;
 
@@ -34,6 +35,10 @@ public class BookingActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         Context = this;
+
+        radio_Mucha = findViewById(R.id.radio_Mucha);
+        radio_Turner = findViewById(R.id.radio_Turner);
+        tvselectE = findViewById(R.id.tvselectE);
 
         btn_pm12 = findViewById(R.id.btn_pm12);
         btn_pm2 = findViewById(R.id.btn_pm2);
@@ -107,6 +112,13 @@ public class BookingActivity extends AppCompatActivity {
                 tvYear.setText(Integer.toString(selectYear));
                 tvMonth.setText(Integer.toString(selectMonth));
                 tvDay.setText(Integer.toString(selectDay));
+
+                if(radio_Mucha.isChecked()){
+                    tvselectE.setText("알폰스 무하展");
+                } else if(radio_Turner.isChecked()){
+                    tvselectE.setText("윌리엄 터너展");
+                }
+
                 Intent intent = new Intent(BookingActivity.this, Booking_checkActivity.class);
                 startActivity(intent);
             }

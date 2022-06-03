@@ -8,27 +8,28 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/mainbtn1"
-        android:layout_width="match_parent"
+        android:id="@+id/maingallery_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:src="@drawable/main1"
-        android:text="전시보러가기"
+        android:src="@drawable/main_gallery_imgbtn"
         tools:ignore="SpeakableTextPresentCheck" />
-    <Button
-        android:id="@+id/mainbooking_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="예약"/>
 
     <ImageButton
-        android:id="@+id/mainbtn2"
-        android:layout_width="match_parent"
+        android:id="@+id/mainbooking_btn"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:layout_weight="1"
-        android:src="@drawable/main2"
-        android:text="관람후기"
+        android:src="@drawable/main_booking_imgbtn"
         tools:ignore="SpeakableTextPresentCheck" />
 
-
+    <ImageButton
+        android:id="@+id/mainreview_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/main_review_imgbtn"
+        android:layout_marginTop="4dp"
+        tools:ignore="SpeakableTextPresentCheck" />
 </LinearLayout>

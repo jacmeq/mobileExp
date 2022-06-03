@@ -9,18 +9,18 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    ImageButton mainbtn1,mainbtn2;
-    Button mainbooking_btn;
+    ImageButton maingallery_btn,mainbooking_btn,mainreview_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mainbtn1=findViewById(R.id.mainbtn1);
-        mainbtn2=findViewById(R.id.mainbtn2);
+
+        maingallery_btn=findViewById(R.id.maingallery_btn);
+        mainreview_btn=findViewById(R.id.mainreview_btn);
         mainbooking_btn=findViewById(R.id.mainbooking_btn);
 
-        mainbtn1.setOnClickListener(new View.OnClickListener() {
+        maingallery_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent start = new Intent(getApplicationContext(),
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(start);
             }
         });
-        mainbtn2.setOnClickListener(new View.OnClickListener() {
+        mainreview_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent start = new Intent(getApplicationContext(),

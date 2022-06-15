@@ -76,7 +76,5 @@ public class Main_registerActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }

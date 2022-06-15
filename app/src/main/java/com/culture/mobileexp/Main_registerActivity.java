@@ -23,7 +23,7 @@ public class Main_registerActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth; //firebase연동
     private DatabaseReference mDatabaseReference;//서버에 연결시킬 수 있는 실시간 데이터베이스
     private EditText mEtEmail, mEtPwd;
-    private Button mBtnRegister, btn_re_login;
+    private Button mBtnRegister, btn_re_login,btn_delete;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -76,6 +76,7 @@ public class Main_registerActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
     }
 }

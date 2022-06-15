@@ -19,7 +19,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Main_loginActivity extends AppCompatActivity {
-
     Button btn_login,btn_register;
     private FirebaseAuth mFirebaseAuth; //firebase연동
     private DatabaseReference mDatabaseReference;//서버에 연결시킬 수 있는 실시간 데이터베이스

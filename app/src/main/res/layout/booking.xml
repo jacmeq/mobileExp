@@ -5,6 +5,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".BookingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#66B2FF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mail2"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="145dp"
+            android:text="관람 전시 예약"/>
+    </LinearLayout>
     <ScrollView
         android:id="@+id/bio_scroll"
         android:layout_width="match_parent"
@@ -24,6 +41,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
                     android:orientation="horizontal">
                     <ImageView
                         android:layout_width="40dp"
@@ -180,14 +198,14 @@
                     android:text="-"
                     android:layout_gravity="center"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:id="@+id/btn_down"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="1"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:layout_margin="10dp"
                     android:id="@+id/people_counter"/>
                 <Button
@@ -196,7 +214,7 @@
                     android:text="+"
                     android:layout_gravity="center"
                     android:textColor="#000000"
-                    android:textSize="15sp"
+                    android:textSize="15dp"
                     android:id="@+id/btn_up"/>
             </LinearLayout>
 
@@ -212,50 +230,50 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="2022"
-                    android:textSize="20sp" />
+                    android:textSize="20dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:text="년 "/>
                 <TextView
                     android:id="@+id/tvMonth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:text="00"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:text="월 "/>
                 <TextView
                     android:id="@+id/tvDay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:text="00"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:text="일 "/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="회차 "
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:id="@+id/tvTime"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textColor="#000000"
-                    android:textSize="20sp"
+                    android:textSize="20dp"
                     android:layout_marginLeft="10dp"
                     android:id="@+id/tvselectE"/>
             </LinearLayout>
@@ -268,7 +286,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:background="#66B2FF"
         android:layout_gravity="center"

@@ -213,4 +213,15 @@
             android:text="@string/ban2"/>
 
     </LinearLayout>
+    <Button
+        android:id="@+id/btn_mainGO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="#66B2FF"
+        android:layout_gravity="center"
+        android:text="로그아웃/LOGOUT"/>
 </LinearLayout>

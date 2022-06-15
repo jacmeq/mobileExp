@@ -20,7 +20,7 @@ public class BookingActivity extends AppCompatActivity {
     RadioButton radio_Turner,radio_Mucha;
     Button btn_pm12, btn_pm2, btn_pm4, btn_End, btn_up, btn_down;
     CalendarView calView;
-    TextView tvTime, tvYear, tvMonth, tvDay, people_counter, tvselectE;
+    TextView tvTime, tvYear, tvMonth, tvDay, people_counter, tvselectE,mail2;
     int selectYear, selectMonth, selectDay;
     private int count = 0;
 

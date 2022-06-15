@@ -72,7 +72,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
+                android:textSize="30dp"
                 android:gravity="center"
                 android:padding="10dp"
                 android:textColor="#FFB829"
@@ -80,7 +80,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
+                android:textSize="20dp"
                 android:gravity="center"
                 android:textColor="#000000"
                 android:text="@string/young1"/>
@@ -120,7 +120,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
+                android:textSize="30dp"
                 android:gravity="center"
                 android:padding="20dp"
                 android:textColor="#0033CC"
@@ -128,7 +128,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="18sp"
+                android:textSize="18dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="#000000"
@@ -144,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="20dp"
-                android:textSize="20sp"
+                android:textSize="20dp"
                 android:text="@string/friend"
                 android:textColor="#336699" />
 
